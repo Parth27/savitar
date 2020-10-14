@@ -16,6 +16,14 @@ document.body.onload = function() {
     chrome.storage.sync.get("data", function(items) {
       if (!chrome.runtime.error) {
         message = items["data"];
+        message = {
+            experience: {
+                checked: true
+            },
+            sponsorship: {
+                checked: true
+            }
+        };
         for(const badge in message){
             document.getElementById(badge).checked = message[badge]["checked"];
         }
