@@ -46,19 +46,33 @@ const getSponsorship = (text) => {
     return "Yes";
 }
 
+const getDegree = (text) => {
+    return "MS Computer Science";
+}
+
+const getRemote = (text) => {
+    return "Yes";
+}
+
 function getElementByXpath(path) {
     return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 }
 
 const text = document.getElementsByTagName("article")[0].textContent;
 
-let parentDiv = getElementByXpath("/html/body/div[8]/div[3]/div/div[1]/div[1]/div/div[1]/div/section/div[2]/div[1]");
+let parentDiv = getElementByXpath("/html/body/div[8]/div[3]/div/div[1]/div[1]/div/div[1]/div/section/div[2]/div[1]")
 
 const experienceBadge = generateBadge("#44cc11", "experience", getExperience(text));
 const sponsorshipBadge = generateBadge("#00aadd", "sponsorship", getSponsorship(text));
+const degreeBadge = generateBadge("#fa8128", "degree", getDegree(text));
+const remoteBadge = generateBadge("#f20463", "remote", getRemote(text));
+
+
 const badges = {
     experience: experienceBadge,
-    sponsorship: sponsorshipBadge
+    sponsorship: sponsorshipBadge,
+    degree: degreeBadge,
+    remote: remoteBadge
 };
 
 chrome.runtime.onMessage.addListener(newMessage);
@@ -69,6 +83,7 @@ function newMessage(message, sender, sendResponse){
 
 function resetBadges(message){
     for(const badge in message){
+
         const badgeElement = document.getElementById(badge);
         if(message[badge]["checked"]){
             if(!badgeElement){
