@@ -46,6 +46,14 @@ const getSponsorship = (text) => {
     return "Yes";
 }
 
+const getDegree = (text) => {
+    return "MS Computer Science";
+}
+
+const getRemote = (text) => {
+    return "Yes";
+}
+
 function getElementByXpath(path,document) {
     return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 }
@@ -60,9 +68,13 @@ const displayBadge = (document) => {
 
     const experienceBadge = generateBadge("#44cc11", "experience", getExperience(text));
     const sponsorshipBadge = generateBadge("#00aadd", "sponsorship", getSponsorship(text));
+    const degreeBadge = generateBadge("#fa8128", "degree", getDegree(text));
+    const remoteBadge = generateBadge("#f20463", "remote", getRemote(text));
     const badges = {
         experience: experienceBadge,
-        sponsorship: sponsorshipBadge
+        sponsorship: sponsorshipBadge,
+        degree: degreeBadge,
+        remote: remoteBadge
     };
     return [parentDiv,badges];
 }

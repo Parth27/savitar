@@ -9,6 +9,12 @@ let message = {
     },
     sponsorship: {
         checked: true
+    },
+    degree: {
+        checked: true
+    },
+    remote: {
+        checked: true
     }
 };
 
@@ -21,6 +27,12 @@ document.body.onload = function() {
                 checked: true
             },
             sponsorship: {
+                checked: true
+            },
+            degree: {
+                checked: true
+            },
+            remote: {
                 checked: true
             }
         };
