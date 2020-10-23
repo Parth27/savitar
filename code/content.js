@@ -79,19 +79,14 @@ const displayBadge = (document) => {
     return [parentDiv,badges];
 }
 
-function handleClickSync() {
-    setCount(count + 1);
+function DelayedCount() {
+  const [count, setCount] = useState(0);
+
+  function handleClickAsync() {
+    setTimeout(function delay() {
+      setCount(count => count + 1);
+    }, 1000);
   }
-
-  return (
-    <div>
-      {count}
-      <button onClick={handleClickAsync}>Increase async</button>
-      <button onClick={handleClickSync}>Increase sync</button>
-    </div>
-  );
-}
-
 
 chrome.runtime.onMessage.addListener(newMessage);
 
