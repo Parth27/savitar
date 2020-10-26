@@ -1,101 +1,112 @@
 <html>
-    <head>
-        <style>
-            .box{
-                width: 120;
-                display: flex;
-                flex-direction: column;
-                align-items: left;
-            }
-            .switch{
-                flex: 1;
-            }
-            .title{
-                display: flex;
-                justify-content: center;
-            }
+  <head>
+    <style>
+      .box {
+        width: 120;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+      }
+      .switch {
+        flex: 1;
+      }
+      .title {
+        display: flex;
+        justify-content: center;
+      }
 
-            .toggle {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 33px;
-  height: 12px;
-  display: inline-block;
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  background-color: #707070;
-  transition: background-color ease 0.3s;
-}
+      .toggle {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 33px;
+        height: 12px;
+        display: inline-block;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background-color: #707070;
+        transition: background-color ease 0.3s;
+      }
 
-.toggle:before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 2;
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  left: 2px;
-  top: 2px;
-  border-radius: 50%;
-  font: 10px/28px Helvetica;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-indent: -22px;
-  word-spacing: 37px;
-  color: #fff;
-  text-shadow: -1px -1px rgba(0,0,0,0.15);
-  white-space: nowrap;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
-}
+      .toggle:before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 2;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        font: 10px/28px Helvetica;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-indent: -22px;
+        word-spacing: 37px;
+        color: #fff;
+        text-shadow: -1px -1px rgba(0, 0, 0, 0.15);
+        white-space: nowrap;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+      }
 
-.toggle:checked {
-  background-color: #4CD964;
-}
+      .toggle:checked {
+        background-color: #4cd964;
+      }
 
-.toggle:checked:before {
-  left: 22px;
-}
+      .toggle:checked:before {
+        left: 22px;
+      }
 
-.switch{
-    display: flex;
-    justify-content: left;
-}
-.switchElement{
-    flex: 1;
-}
-        </style>
-    </head>
-    <body>
-        <h2 class="title">Savitar 	&#9889; </h2>
-        <div class="box">
-            <label class="switch">
-             <span class="switchElement">Experience</span>
-             <span class="switchElement"><input id="experience" class="toggle" type="checkbox" checked="true"></span>
-            </label>
+      .switch {
+        display: flex;
+        justify-content: left;
+      }
+      .switchElement {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title">Savitar &#9889;</h2>
+    <div class="box">
+      <label class="switch">
+        <span class="switchElement">Experience</span>
+        <span class="switchElement"
+          ><input id="experience" class="toggle" type="checkbox" checked="true"
+        /></span>
+      </label>
 
-            <label class="switch">
-                <span class="switchElement">Sponsorship</span>
-                <span class="switchElement"><input id="sponsorship" class="toggle" type="checkbox" checked="true"></span>
-            </label>
-			
-			<label class="switch">
-                <span class="switchElement">Degree</span>
-                <span class="switchElement"><input id="degree" class="toggle" type="checkbox" checked="true"></span>
-            </label>
-			
-			<label class="switch">
-                <span class="switchElement">Remote</span>
-                <span class="switchElement"><input id="remote" class="toggle" type="checkbox" checked="true"></span>
-            </label>
-			
-        </div>
-        <script type="text/javascript" src="popup.js"></script>
-    </body>
+      <label class="switch">
+        <span class="switchElement">Sponsorship</span>
+        <span class="switchElement"
+          ><input
+            id="sponsorship"
+            class="toggle"
+            type="checkbox"
+            checked="true"
+        /></span>
+      </label>
+
+      <label class="switch">
+        <span class="switchElement">Degree</span>
+        <span class="switchElement"
+          ><input id="degree" class="toggle" type="checkbox" checked="true"
+        /></span>
+      </label>
+
+      <label class="switch">
+        <span class="switchElement">Remote</span>
+        <span class="switchElement"
+          ><input id="remote" class="toggle" type="checkbox" checked="true"
+        /></span>
+      </label>
+    </div>
+    <script type="text/javascript" src="popup.js"></script>
+  </body>
 </html>
