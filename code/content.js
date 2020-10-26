@@ -52,7 +52,14 @@ const getSponsorship = (text) => {
 };
 
 const getDegree = (text) => {
-  return "MS Computer Science";
+  var pattern = /(Master[\'s]*[\s]+|Bachelor[\'s]*[\s]*|M[\.]*s[\s]+|B[\.]*S[\s]+|BA[\s]*|Postdoctoral[\s]+|PhD[\s]+)/g;
+
+  var result = text.match(pattern);
+     
+  if (result == null){
+        result = "N/A"
+    }
+  return result ;
 };
 
 const getRemote = (text) => {
