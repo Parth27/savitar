@@ -39,7 +39,12 @@ const generateBadge = (color, label, value) => {
 };
 
 const getExperience = (text) => {
-  return "3 years";
+  var pattern = /[0-9]*[\s]*[\-]*[\s]*[0-9]+[\+]*[\s]*[or\smore]*[\s]*years/g;
+  var result = text.match(pattern);
+  if (result == null){
+        result = "N/A"
+    }
+  return "result";
 };
 
 const getSponsorship = (text) => {
