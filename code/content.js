@@ -41,9 +41,23 @@ const generateBadge = (color, label, value) => {
 const getExperience = (text) => {
   var pattern = /[0-9]*[\s]*[\-]*[\s]*[0-9]+[\+]*[\s]*[or\smore]*[\s]*years/g;
   var result = text.match(pattern);
+  var maxNum = parseInt("0")
+    var maxIdx = 0
+    if (result.length > 1 ){   
+
+        for (i = 0; i < result.length; i++) {
+        num = result[i].match(/\d+/)[0];
+        if (num > maxNum){
+            maxNum = num
+            maxIdx = i
+        }
+            
+        }
+   }
+
   if (result == null){
         result = "N/A"
-    }
+  }
   return "result";
 };
 
