@@ -63,7 +63,7 @@ const getExperience = (text) => {
 
 const getSponsorship = (text) => {
   var pattern = /(U[/.]*S Citizens|No sponsorship|No Sponsorship)/g;
-  var result = str.match(pattern);
+  var result = text.match(pattern);
   if (result == null){
         result = "Available"
   }
@@ -83,7 +83,7 @@ const getDegree = (text) => {
 
 const getRemote = (text) => {
   var pattern = /(work from home|remote work)/g;
-  var result = str.match(pattern);
+  var result = text.match(pattern);
   if (result == null){
         result = "N/A"
     }else{
