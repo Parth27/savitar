@@ -147,7 +147,7 @@ function handleClickAsync() {
   }, 1000);
 }
 
-chrome.runtime.onMessage.addListener(newMessage);
+//chrome.runtime.onMessage.addListener(newMessage);
 
 function newMessage(message, sender, sendResponse) {
   console.log("Message received");
