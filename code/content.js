@@ -77,7 +77,14 @@ const getDegree = (text) => {
 };
 
 const getRemote = (text) => {
-  return "Yes";
+  var pattern = /(work from home|remote work)/g;
+  var result = str.match(pattern);
+  if (result == null){
+        result = "N/A"
+    }else{
+    result = "Yes"
+    }
+  return result;
 };
 
 function getElementByXpath(path, document) {
