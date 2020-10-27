@@ -30,6 +30,8 @@ Examples of unacceptable behavior by participants include:
  address, without explicit permission
 * Other conduct which could reasonably be considered inappropriate in a
  professional setting
+* Violence, threats of violence, or inciting others to commit self-harm
+* Advocating for, or encouraging, any of the above behavior
  
 ## Community Goals
 * Be welcoming: We strive to be a community that welcomes and supports people of all backgrounds and identities. 
