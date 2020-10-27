@@ -37,7 +37,7 @@ All HTML must adhere to [HTML Standard Style](https://google.github.io/styleguid
 
 # Contributing to Savitar
 
-Thank you so much for taking an interest in contributing! We are lookng forward to contributions that will enable lesser human intervention!! There are many ways to contribute to this porject!
+Thank you so much for taking an interest in contributing. We are lookng forward to contributions that will enable lesser human intervention. There are many ways to contribute to this porject.
 
 #### Table Of Contents
 [Code of Conduct](CODE_OF_CONDUCT.md)
@@ -71,7 +71,7 @@ One can go ahead and follow the [3-step process](#required-3-steps-for-contribut
 
 ### Reporting Bugs
 
-This section guides you through submitting a bug report for this repository. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer: :computer:, and find related reports :mag_right:.
+This section guides you through submitting a bug report for this repository. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
 
 Before creating bug reports, please perform a cursory search to see if the problem has already been reported. If it has **and the issue is still open**, add a comment to the existing issue instead of opening a new one.
 
