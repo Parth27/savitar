@@ -37,12 +37,7 @@ Examples of unacceptable behavior by participants include:
 * Be welcoming: We strive to be a community that welcomes and supports people of all backgrounds and identities. 
 * Be considerate: Your work will be used by other people and you in turn will use other people's work. Any decision you take will affect users and colleagues and you should take those consequences into account.
 * Be respectful: Not all of us will agree all of the time, but disagreement is no excuse for poor behavior and poor manners.
-*
-*
-*
-*
-*
-*Community Goal: Be Kind
+* Be Kind: Any disagreement between contributors should be dealt with kindness.
 
 Our community of staff, instructors, and current & former students strives to be kind. This is the guiding principle for conducting oneself within the Code Fellows community.
 
