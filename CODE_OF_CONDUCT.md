@@ -30,6 +30,12 @@ Examples of unacceptable behavior by participants include:
  address, without explicit permission
 * Other conduct which could reasonably be considered inappropriate in a
  professional setting
+ 
+## Community Goals
+* Be welcoming: We strive to be a community that welcomes and supports people of all backgrounds and identities. 
+* Be considerate: Your work will be used by other people and you in turn will use other people's work. Any decision you take will affect users and colleagues and you should take those consequences into account.
+* Be respectful: Not all of us will agree all of the time, but disagreement is no excuse for poor behavior and poor manners.
+
 
 ## Our Responsibilities
 
