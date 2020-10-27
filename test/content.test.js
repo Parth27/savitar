@@ -5,7 +5,7 @@ test("Returns number of year of experience", () => {
 });
 
 test("Returns degree required", () => {
-    expect(lib.getDegree("Masters and Bachelors in Computer Science")).toBe(["Masters ", "Bachelors "]);
+    expect(lib.getDegree("Degree in Computer Science")).toBe("N/A");
 });
 
 test("Returns if job is remote or not", () => {
