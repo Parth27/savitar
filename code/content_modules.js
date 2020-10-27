@@ -54,5 +54,5 @@ globalThis.getRemote = (text) => {
     return result;
 };
 
-// Comment out this line before trying to run extension
+// This line might throw an error in chrome extensions but the extension should still work
 module.exports = {getExperience,getSponsorship,getDegree,getRemote};
