@@ -66,6 +66,8 @@ const getSponsorship = (text) => {
   var result = text.match(pattern);
   if (result == null){
         result = "Available"
+  }else{
+    result = "Yes"
   }
   return result;
 };
