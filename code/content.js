@@ -58,7 +58,7 @@ const getExperience = (text) => {
   if (result == null){
         result = "N/A"
   }
-  return "result";
+  return result[maxIdx];
 };
 
 const getSponsorship = (text) => {
@@ -169,3 +169,5 @@ function resetBadges(message, document) {
     }
   }
 }
+
+module.exports = { getExperience, getDegree, getRemote, getSponsorship};
