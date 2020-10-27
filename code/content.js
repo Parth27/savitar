@@ -38,62 +38,6 @@ const generateBadge = (color, label, value) => {
   return badgeDiv;
 };
 
-const getExperience = (text) => {
-  var pattern = /[0-9]*[\s]*[\-]*[\s]*[0-9]+[\+]*[\s]*[or\smore]*[\s]*years/g;
-  var result = text.match(pattern);
-  var maxNum = parseInt("0")
-    var maxIdx = 0
-    if (result.length > 1 ){   
-
-        for (i = 0; i < result.length; i++) {
-        num = result[i].match(/\d+/)[0];
-        if (num > maxNum){
-            maxNum = num
-            maxIdx = i
-        }
-            
-        }
-   }
-
-  if (result == null){
-        result = "N/A"
-  }
-  return result[maxIdx];
-};
-
-const getSponsorship = (text) => {
-  var pattern = /(U[/.]*S Citizens|No sponsorship|No Sponsorship)/g;
-  var result = text.match(pattern);
-  if (result == null){
-        result = "Available"
-  }else{
-    result = "Yes"
-  }
-  return result;
-};
-
-const getDegree = (text) => {
-  var pattern = /(Master[\'s]*[\s]+|Bachelor[\'s]*[\s]*|M[\.]*s[\s]+|B[\.]*S[\s]+|BA[\s]*|Postdoctoral[\s]+|PhD[\s]+)/g;
-
-  var result = text.match(pattern);
-     
-  if (result == null){
-        result = "N/A"
-    }
-  return result ;
-};
-
-const getRemote = (text) => {
-  var pattern = /(work from home|remote work)/g;
-  var result = text.match(pattern);
-  if (result == null){
-        result = "N/A"
-    }else{
-    result = "Yes"
-    }
-  return result;
-};
-
 function getElementByXpath(path, document) {
   return document.evaluate(
     path,
@@ -121,15 +65,15 @@ const displayBadge = (document) => {
   const experienceBadge = generateBadge(
     "#44cc11",
     "experience",
-    getExperience(text)
+    globalThis.getExperience(text)
   );
   const sponsorshipBadge = generateBadge(
     "#00aadd",
     "sponsorship",
-    getSponsorship(text)
+    globalThis.getSponsorship(text)
   );
-  const degreeBadge = generateBadge("#fa8128", "degree", getDegree(text));
-  const remoteBadge = generateBadge("#f20463", "remote", getRemote(text));
+  const degreeBadge = generateBadge("#fa8128", "degree", globalThis.getDegree(text));
+  const remoteBadge = generateBadge("#f20463", "remote", globalThis.getRemote(text));
   const badges = {
     experience: experienceBadge,
     sponsorship: sponsorshipBadge,
@@ -149,7 +93,7 @@ function handleClickAsync() {
   }, 1000);
 }
 
-//chrome.runtime.onMessage.addListener(newMessage);
+chrome.runtime.onMessage.addListener(newMessage);
 
 function newMessage(message, sender, sendResponse) {
   console.log("Message received");
@@ -171,5 +115,3 @@ function resetBadges(message, document) {
     }
   }
 }
-
-module.exports = { getExperience, getDegree, getRemote, getSponsorship};

@@ -1,4 +1,4 @@
-const lib = require('../code/content');
+const lib = require('../code/content_modules');
 
 test("Returns number of year of experience", () => {
     expect(lib.getExperience("2+ years of experience")).toBe("2+ years");
