@@ -62,7 +62,12 @@ const getExperience = (text) => {
 };
 
 const getSponsorship = (text) => {
-  return "Yes";
+  var pattern = /(U[/.]*S Citizens|No sponsorship|No Sponsorship)/g;
+  var result = str.match(pattern);
+  if (result == null){
+        result = "Available"
+  }
+  return result;
 };
 
 const getDegree = (text) => {
