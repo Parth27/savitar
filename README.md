@@ -31,7 +31,7 @@ We all know, how challenging it is to find the job that meets all your expectati
 * Added browser testing using Selenium for verifying html part of the code.
 
 # Download the chrome extension 
-<a id="raw-url" href="https://raw.githubusercontent.com/Parth27/savitar/master/Downloads/savitar.crx">Savitar</a>
+Download the packed extension in .crx format <a id="raw-url" href="https://raw.githubusercontent.com/Parth27/savitar/master/Downloads/savitar.crx">Savitar</a>
 
 
 # Project Set up
