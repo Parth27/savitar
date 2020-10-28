@@ -59,7 +59,7 @@ All JavaScript must adhere to [JavaScript Standard Style](https://standardjs.com
 
 * Prefer the object spread operator (`{...anotherObj}`) to `Object.assign()`
 * Since this is a chrome extension, imports/exports and require is not recommended and cannot be used directly.
-* If it is necessary to import modules, then please use inline `export`s with expressions whenever possible
+* If it is necessary to import/export modules, then please use inline `export`s with expressions whenever possible
   ```js
   // Use this:
   export default class ClassName {
