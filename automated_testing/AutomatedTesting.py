@@ -21,17 +21,20 @@ from selenium.common.exceptions import NoSuchElementException as ElemNotFound
 ############################################################
 ''''
 
-    
+
+# Class to Test Popup.html     
 class AutomatedTesting():
+    # Initializes Chrome Driver
     def __init__(self,test_buttons):
         self.test_buttons = test_buttons
 
         # Load the extension by packing the extension into a .crx file        
         options = webdriver.ChromeOptions()
-        options.add_extension("C:\\Users\\Rohan\\Savitar\\savitar.crx")
+        options.add_extension("../Downloads/savitar.crx")
         
         self.driver = webdriver.Chrome(options=options) 
     
+    # Tests the Extension
     def test(self,extension_id):
         self.driver.get("chrome-extension://"+ extension_id + "/code/popup.html")
         for label in self.test_buttons:
@@ -44,6 +47,7 @@ class AutomatedTesting():
               return False
         return True
         
+    # Closes the Chrome Driver
     def close(self):
         print("All Tests Successful")
         self.driver.close()
