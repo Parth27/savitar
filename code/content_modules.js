@@ -5,6 +5,12 @@
 
 // Functions for parsing content for badges. Used globalThis to make these functions accessible in content.js
 globalThis.getExperience = (text) => {
+
+    /*  Input: Job Description 
+        Parses the Job Description to get the maximum number of years of
+        experience required for any skill 
+        Returns: Yes or No
+    */
     var pattern = /[0-9]*[\s]*[\-]*[\s]*[0-9]+[\+]*[\s]*[or\smore]*[\s]*years/g;
     var result = text.match(pattern);
     var maxNum = parseInt("0")
@@ -60,6 +66,10 @@ globalThis.getDegree = (text) => {
 };
 
 globalThis.getRemote = (text) => {
+    /*  Input: Job Description 
+        Parses the Job Description to inform us if job is remote or not 
+        Returns: Yes or N/A
+    */
     var pattern = /(work from home|remote work)/g;
     var result = text.match(pattern);
     if (result == null){
