@@ -8,7 +8,6 @@
 <p align="center">
 <img src = "https://img.shields.io/github/license/Parth27/savitar">
 <img src = "https://img.shields.io/github/issues/Parth27/savitar">
-<img src = "https://img.shields.io/aur/last-modified/today">
 <img src = "https://img.shields.io/github/last-commit/Parth27/savitar">
 </p>
 
