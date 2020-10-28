@@ -1,3 +1,10 @@
+/**
+ * 
+ * @param {String} color Display color 
+ * @param {String} label Display Label
+ * @param {String} value Value of the job tags 
+ */
+
 const generateBadge = (color, label, value) => {
   // Function to generate a badge
   let badgeDiv = document.createElement("div");
@@ -39,6 +46,11 @@ const generateBadge = (color, label, value) => {
   return badgeDiv;
 };
 
+/**
+ * 
+ * @param {String} path 
+ * @param {String} document Returns Job Description
+ */
 function getElementByXpath(path, document) {
   // Function to return HTML element from given Xpath
   return document.evaluate(
@@ -50,6 +62,10 @@ function getElementByXpath(path, document) {
   ).singleNodeValue;
 }
 
+/**
+ * 
+ * @param {String} document Returns Job Description
+ */
 const displayBadge = (document) => {
   const text = document.getElementsByTagName("article")[0].textContent;
   // Location when opening job in new tab
@@ -103,6 +119,11 @@ function newMessage(message, sender, sendResponse) {
   resetBadges(message, document);
 }
 
+/**
+ * 
+ * @param {String} message Message to Display
+ * @param {String} document Returns Job Description 
+ */
 function resetBadges(message, document) {
   let [parentDiv, badges] = displayBadge(document);
   for (const badge in message) {
