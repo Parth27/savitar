@@ -7,8 +7,7 @@
 
 <p align="center">
 <img src = "https://img.shields.io/github/license/pushkardravid/savitar">
-<img src = "https://img.shields.io/github/issues-raw/pushkardravid/savitar">
-<img src = "https://img.shields.io/github/issues-closed-raw/pushkardravid/savitar">
+<img src = "https://img.shields.io/github/issues/Parth27/savitar">
 <img src = "https://img.shields.io/github/issues-pr/pushkardravid/savitar">
 <img src = "https://img.shields.io/github/last-commit/pushkardravid/savitar">
 <img src = "https://img.shields.io/github/release-date/pushkardravid/savitar">
