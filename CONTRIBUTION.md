@@ -139,6 +139,13 @@ Enhancement suggestions are tracked as [GitHub issues](https://guides.github.com
 
 ### Your First Code Contribution
 
+#### First Time Contributors
+
+We appreciate your contribution! If you are interested in improving Savitar, there are several ways to get started:
+
+* Work on documentation issues.
+* Ask via email or on the issue tracker about good beginner issues.
+
 #### Required 3 Steps for contributing:
 * Commit changes to a new git branch.
 * Create a Pull-Request for the changes. Make sure to follow the [Pull Request Template](#pull-requests).
