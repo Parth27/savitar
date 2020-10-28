@@ -17,9 +17,6 @@ We all know, how challenging it is to find the job that meets all your expectati
 
 ---
 
-## Table of contents
-- [Project Video](#project-video-and-demo)
-- [What we completed in phase 2](what-we-completed-in-phase-2)
 
 # Project Video and Demo
 
