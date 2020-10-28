@@ -19,7 +19,7 @@ We all know, how challenging it is to find the job that meets all your expectati
 ---
 
 ## Table of contents
-- [Project Video](#project-video)
+- [Project Video](#project-video-and-demo)
 - [Project Stages](#project-stages)
 - [License](#license)
 
@@ -29,12 +29,15 @@ We all know, how challenging it is to find the job that meets all your expectati
 
 # Project Stages
 
-## Part 1 Overview
+## What we completed in phase 2
+* Removed dummy data of badges to actual realtime data using string parsing the body of linkedln pages.
+* Expanded the functionality of project by adding fileds like "Years of experience", "Sponsorship", "Domain", etc.
 * Completed integrating the Chrome extension with LinkedIn.
-* Temporary filters put in place based on candidate requirements which highlight the presence of the required job components. 
+* Added Unit Tests for Javascript related part of the project.
+* Added browser testing using Selenium for verifying html part of code.
 
 ## Part 2 Requirements 
-* Setting up a named entity recognition REST sevice which accounts for the fields such as, "Years of experience", "Sponsorship", "Domain", etc. 
+
 * Expanding the scope of LinkedIn badges to derive several other key insights required by a job seeking candidate. These can range from salary based filters to identifying the location specific jobs.
 
 ## Part 3 Requirements
@@ -42,5 +45,4 @@ We all know, how challenging it is to find the job that meets all your expectati
 * Fulfill all requirements related to deployment of the extension to Chrome store.
 * Expanding the scope of the project to other portals such as Indeed, Monster.com etc. for the best possible user experience and time saving. 
 
-## License
-<img src = "https://img.shields.io/github/license/pushkardravid/savitar">
+
