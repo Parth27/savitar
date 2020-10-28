@@ -1,3 +1,4 @@
+// Functions for parsing content for badges. Used globalThis to make these functions accessible in content.js
 globalThis.getExperience = (text) => {
     var pattern = /[0-9]*[\s]*[\-]*[\s]*[0-9]+[\+]*[\s]*[or\smore]*[\s]*years/g;
     var result = text.match(pattern);
