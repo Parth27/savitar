@@ -6,8 +6,7 @@
   "main": "content.test.js",
   "scripts": {
     "test": "jest",
-    "test: coverage": "jest --coverage",
-    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info |coveralls"
   },
   "keywords": [],
   "author": "",
