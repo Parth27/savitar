@@ -10,7 +10,7 @@
 <img src = "https://img.shields.io/github/issues/Parth27/savitar">
 <img src = "https://img.shields.io/github/issues-pr/pushkardravid/savitar">
 <img src = "https://img.shields.io/aur/last-modified/today">
-<img src = "https://img.shields.io/github/release-date/pushkardravid/savitar">
+<img src = "https://img.shields.io/github/last-commit/Parth27/savitar">
 <img src = "https://img.shields.io/youtube/views/aRedmJN3bUc?style=social">
 <img src = "https://img.shields.io/github/contributors/pushkardravid/savitar">
 </p>
