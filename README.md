@@ -29,6 +29,7 @@ We all know, how challenging it is to find the job that meets all your expectati
 * Completed integrating the Chrome extension with LinkedIn.
 * Added Unit Tests for Javascript related part of the project.
 * Added browser testing using Selenium for verifying html part of the code.
+* Generated automated documentation using JSdoc.
 
 # Download the chrome extension 
 Download the packed extension in .crx format <a id="raw-url" href="https://raw.githubusercontent.com/Parth27/savitar/master/Downloads/savitar.crx">Savitar</a>
