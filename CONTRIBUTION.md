@@ -1,3 +1,7 @@
+# Contributing to Savitar
+
+Thank you so much for taking an interest in contributing. There are multiple ways to contribute to this porject.
+
 #### Table Of Contents
 
 [Code of Conduct](#code-of-conduct)
@@ -7,10 +11,18 @@
   * [JavaScript Styleguide](#javascript-styleguide)
   * [HTML Styleguide](#html-styleguide)
 
+[How Can I Contribute?](#how-can-i-contribute)
+  * [Reporting Bugs](#reporting-bugs)
+  * [Suggesting Enhancements](#suggesting-enhancements)
+  * [Your First Code Contribution](#your-first-code-contribution)
+  * [Pull Requests](#pull-requests)
+  
+
+[Attribution](#attribution)
 
 ## Code of Conduct
 
-All developers contributing to this project abide by the [Code of Conduct](CODE_OF_CONDUCT.md) defined for this project. Violations should be reported at  [pushkarsdravid@gmail.com](mailto:pushkarsdravid@gmail.com).
+All developers contributing to this project abide by the [Code of Conduct](CODE_OF_CONDUCT.md) defined for this project. Violations should be reported at  [diwanji.parth@gmail.com](mailto:diwanji.parth@gmail.com).
 Please follow these steps to have your contribution considered by the maintainers:
 
 
@@ -33,24 +45,42 @@ All HTML must adhere to [HTML Standard Style](https://google.github.io/styleguid
 * Do not use entity references.
 * Use a new line for every block, list, or table element, and indent every such child element.
 
+### Git Commit Messages
 
+* Use the present tense ("Add feature" not "Added feature")
+* Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
+* Limit the first line to 72 characters or less
+* Reference issues and pull requests liberally after the first line
+* When only changing documentation, include `[ci skip]` in the commit title
 
-# Contributing to Savitar
+### JavaScript Styleguide
 
-Thank you so much for taking an interest in contributing. We are lookng forward to contributions that will enable lesser human intervention. There are many ways to contribute to this porject.
+All JavaScript must adhere to [JavaScript Standard Style](https://standardjs.com/).
 
-#### Table Of Contents
-[Code of Conduct](CODE_OF_CONDUCT.md)
+* Prefer the object spread operator (`{...anotherObj}`) to `Object.assign()`
+* Inline `export`s with expressions whenever possible
+  ```js
+  // Use this:
+  export default class ClassName {
 
-[How Can I Contribute?](#how-can-i-contribute)
-  * [Reporting Bugs](#reporting-bugs)
-  * [Suggesting Enhancements](#suggesting-enhancements)
-  * [Your First Code Contribution](#your-first-code-contribution)
-  * [Pull Requests](#pull-requests)
+  }
 
-[Styleguide](#styleguide)
+  // Instead of:
+  class ClassName {
 
-[Attribution](#attribution)
+  }
+  export default ClassName
+  ```
+* Place requires in the following order:
+    * Built in Node Modules (such as `path`)
+    * Built in Atom and Electron Modules (such as `atom`, `remote`)
+    * Local Modules (using relative paths)
+* Place class properties in the following order:
+    * Class methods and properties (methods starting with `static`)
+    * Instance methods and properties
+* [Avoid platform-dependent code](https://flight-manual.atom.io/hacking-atom/sections/cross-platform-compatibility/)
+* All files must end in a new line
+
 
 ## How Can I Contribute?
 
@@ -134,43 +164,6 @@ Please include the following while creating a Pull Request:
 * Link to the issue it addresses, if issues exist.
 * A short description of what the Pull Request fixes or does (in case of a feature)
 
-## Styleguides
-
-### Git Commit Messages
-
-* Use the present tense ("Add feature" not "Added feature")
-* Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-* Limit the first line to 72 characters or less
-* Reference issues and pull requests liberally after the first line
-* When only changing documentation, include `[ci skip]` in the commit title
-
-### JavaScript Styleguide
-
-All JavaScript must adhere to [JavaScript Standard Style](https://standardjs.com/).
-
-* Prefer the object spread operator (`{...anotherObj}`) to `Object.assign()`
-* Inline `export`s with expressions whenever possible
-  ```js
-  // Use this:
-  export default class ClassName {
-
-  }
-
-  // Instead of:
-  class ClassName {
-
-  }
-  export default ClassName
-  ```
-* Place requires in the following order:
-    * Built in Node Modules (such as `path`)
-    * Built in Atom and Electron Modules (such as `atom`, `remote`)
-    * Local Modules (using relative paths)
-* Place class properties in the following order:
-    * Class methods and properties (methods starting with `static`)
-    * Instance methods and properties
-* [Avoid platform-dependent code](https://flight-manual.atom.io/hacking-atom/sections/cross-platform-compatibility/)
-* All files must end in a new line
 
 
 ## Attribution
