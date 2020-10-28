@@ -23,7 +23,7 @@ We all know, how challenging it is to find the job that meets all your expectati
 - [Project Stages](#project-stages)
 - [License](#license)
 
-# Project Video
+# Project Video and Demo
 
 [![Savitar demo](https://img.youtube.com/vi/sKJj4aNkDVI/0.jpg)](https://www.youtube.com/watch?v=sKJj4aNkDVI)
 
