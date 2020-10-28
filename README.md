@@ -49,7 +49,7 @@ To compare the time one takes to decide to apply for a given job on linkedln wit
 * Now, using savitar, again ask them to make the decision for the other job profile. Again, record the time.
 * Now compare both the times.
 
-* Repeat this experiment with more number of jobs and for more number of people.
+* Repeat this experiment with sets of more number of jobs and for more number of people.
 * Analyse and compare the timing data statistically to verify the hypothesis.
 
 
