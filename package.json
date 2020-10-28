@@ -1,7 +1,7 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Linting, code coverage and unit testing ",
   
   "main": "content.test.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "lint" : "eslint \"./**/*.js\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Riddhi Zunjarrao",
   "license": "MIT",
   "devDependencies": {
     "jest": "^26.6.1",
