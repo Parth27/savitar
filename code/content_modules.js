@@ -1,132 +1,59 @@
-/**
- * 
- * @param {String} color Display color 
- * @param {String} label Display Label
- * @param {String} value Value of the job tags 
- */
-
-const generateBadge = (color, label, value) => {
-  // Function to generate a badge
-  let badgeDiv = document.createElement("div");
-  badgeDiv.setAttribute("id", label);
-  badgeDiv.style = `display: inline-block;
-                      border-radius: .75em;
-                      font-family: 'Dejavu Sans','Arial';
-                      margin-right: 20px;`;
-  let titleDiv = document.createElement("div");
-  titleDiv.style = `border-top-left-radius: .25em; 
-                      border-bottom-left-radius: .25em;
-                      background: #555555;
-                      display: inline-block;
-                      float: left;
-                      text-transform: lowercase;
-                      color: #FFF;
-                      text-shadow: 0px 0.1em 0px rgba(0, 0, 0, 0.5);
-                      margin: 0;
-                      border: 0;
-                      padding-left: 10px;
-                      padding-right: 10px;`;
-  titleDiv.innerHTML = label;
-  let valueDiv = document.createElement("div");
-  valueDiv.style = `background: ${color};
-                      border-top-right-radius: .25em;
-                      border-bottom-right-radius: .25em;
-                      display: inline-block;
-                      float: left;
-                      text-transform: lowercase;
-                      color: #FFF;
-                      text-shadow: 0px 0.1em 0px rgba(0, 0, 0, 0.5);
-                      margin: 0;
-                      border: 0;
-                      padding-left: 10px;
-                      padding-right: 10px;`;
-  valueDiv.innerHTML = value;
-  badgeDiv.appendChild(titleDiv);
-  badgeDiv.appendChild(valueDiv);
-  return badgeDiv;
-};
-
-/**
- * 
- * @param {String} path 
- * @param {String} document Returns Job Description
- */
-function getElementByXpath(path, document) {
-  // Function to return HTML element from given Xpath
-  return document.evaluate(
-    path,
-    document,
-    null,
-    XPathResult.FIRST_ORDERED_NODE_TYPE,
-    null
-  ).singleNodeValue;
-}
-
-const displayBadge = (document) => {
-  const text = document.getElementsByTagName("article")[0].textContent;
-  // Location when opening job in new tab
-  let parentDiv = getElementByXpath(
-    "/html/body/div[8]/div[3]/div/div[1]/div[1]/div/div[1]/div/section/div[2]/div[1]",
-    document
-  );
-  // Location when opening job in same tab
-  if (parentDiv == null) {
-    parentDiv = getElementByXpath(
-      "/html/body/div[7]/div[3]/div/div[1]/div[1]/div/div[1]/div/section/div[2]/div[1]",
-      document
-    );
-  }
-
-  const experienceBadge = generateBadge(
-    "#44cc11",
-    "experience",
-    globalThis.getExperience(text)
-  );
-  const sponsorshipBadge = generateBadge(
-    "#00aadd",
-    "sponsorship",
-    globalThis.getSponsorship(text)
-  );
-  const degreeBadge = generateBadge("#fa8128", "degree", globalThis.getDegree(text));
-  const remoteBadge = generateBadge("#f20463", "remote", globalThis.getRemote(text));
-  const badges = {
-    experience: experienceBadge,
-    sponsorship: sponsorshipBadge,
-    degree: degreeBadge,
-    remote: remoteBadge,
-  };
-  return [parentDiv, badges];
-};
-
-function DelayedCount() {
-  const [count, setCount] = useState(0);
-}
-
-function handleClickAsync() {
-  setTimeout(function delay() {
-    setCount((count) => count + 1);
-  }, 1000);
-}
-// Chrome event listener
-chrome.runtime.onMessage.addListener(newMessage);
-
-function newMessage(message, sender, sendResponse) {
-  console.log("Message received");
-  resetBadges(message, document);
-}
-
-function resetBadges(message, document) {
-  let [parentDiv, badges] = displayBadge(document);
-  for (const badge in message) {
-    const badgeElement = document.getElementById(badge);
-    if (message[badge]["checked"]) {
-      if (!badgeElement) {
-        parentDiv.appendChild(badges[badge]);
-      }
-    } else {
-      if (badgeElement) {
-        badgeElement.remove();
-      }
+// Functions for parsing content for badges. Used globalThis to make these functions accessible in content.js
+globalThis.getExperience = (text) => {
+    var pattern = /[0-9]*[\s]*[\-]*[\s]*[0-9]+[\+]*[\s]*[or\smore]*[\s]*years/g;
+    var result = text.match(pattern);
+    var maxNum = parseInt("0")
+    var maxIdx = 0
+    if (result == null){
+        result = "N/A"
+        return result;
     }
-  }
-}
+    if (result.length > 1 ){   
+
+        for (i = 0; i < result.length; i++) {
+            num = result[i].match(/\d+/)[0];
+            if (num > maxNum){
+                maxNum = num
+                maxIdx = i
+            }
+        }
+    }
+
+    return result[maxIdx];
+};
+
+globalThis.getSponsorship = (text) => {
+    var pattern = /(U[/.]*S Citizens|No sponsorship|No Sponsorship)/g;
+    var result = text.match(pattern);
+    if (result == null){
+            result = "Available"
+    }else{
+        result = "Yes"
+    }
+    return result;
+};
+
+globalThis.getDegree = (text) => {
+    var pattern = /(Master[\'s]*[\s]+|Bachelor[\'s]*[\s]*|M[\.]*s[\s]+|B[\.]*S[\s]+|BA[\s]*|Postdoctoral[\s]+|PhD[\s]+)/g;
+
+    var result = text.match(pattern);
+        
+    if (result == null){
+            result = "N/A"
+        }
+    return result ;
+};
+
+globalThis.getRemote = (text) => {
+    var pattern = /(work from home|remote work)/g;
+    var result = text.match(pattern);
+    if (result == null){
+            result = "N/A"
+        }else{
+        result = "Yes"
+        }
+    return result;
+};
+
+// This line might throw an error in chrome extensions but the extension should still work
+module.exports = {getExperience,getSponsorship,getDegree,getRemote};
