@@ -22,6 +22,7 @@ document.body.onload = function () {
   chrome.storage.sync.get("data", function (items) {
     if (!chrome.runtime.error) {
       message = items["data"];
+      // Default initial values
       message = {
         experience: {
           checked: true,
@@ -45,6 +46,7 @@ document.body.onload = function () {
 };
 
 function gotTabs(tabs) {
+  // Send badge filter information to content script
   chrome.tabs.sendMessage(tabs[0].id, message);
 }
 
