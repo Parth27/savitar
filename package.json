@@ -6,7 +6,7 @@
   "main": "content.test.js",
   "scripts": {
     "test": "jest",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info |coveralls",
+    "coveralls": "jest --coverage && cat lcov.info |coveralls",
     "lint" : "eslint \"./**/*.js\""
   },
   "keywords": [],
