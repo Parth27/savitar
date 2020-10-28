@@ -2,22 +2,20 @@
   "name": "test",
   "version": "1.0.0",
   "description": "Linting, code coverage and unit testing ",
-  
   "main": "content.test.js",
   "scripts": {
     "test": "jest",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info |coveralls",
-    "lint" : "eslint \"./**/*.js\""
-    "document": "jsdoc ./code/content_modules.js"
+    "lint": "eslint \"./**/*.js\"",
+    "document":" jsdoc ./code/content.js -d Doc"
   },
   "keywords": [],
   "author": "Riddhi Zunjarrao",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^26.6.1",
     "coveralls": "^3.1.0",
     "eslint": "^7.11.0",
+    "jest": "^26.6.1",
     "jsdoc": "^3.6.6"
-    
   }
 }
