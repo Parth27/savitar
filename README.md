@@ -26,7 +26,7 @@ We all know, how challenging it is to find the job that meets all your expectati
 
 
 ## What we completed in phase 2
-* Removed dummy data of badges to actual realtime data using string parsing the body of linkedln pages.
+* Replaced dummy data of badges with actual realtime data using string parsing and obtaining data from the body of linkedln pages.
 * Expanded the functionality of project by adding fileds like "Years of experience", "Sponsorship", "Domain", etc.
 * Completed integrating the Chrome extension with LinkedIn.
 * Added Unit Tests for Javascript related part of the project.
@@ -41,4 +41,17 @@ We all know, how challenging it is to find the job that meets all your expectati
 * With the help of this chrome extention, one can speed up the job filering process on linkdln by 70 percent!!!
 
 ## Experimental setup for quantitative evaluation of our project
+### Goal
+To compare the time one takes to decide to apply for a given job on linkedln with and withput using savitar.
+
+### Experiment
+* Take a two similar job descriptions from Linkedln.
+* Pick your favourite person and show them one of the job description.
+* Without using savitar, ask them to make decision on if they want to apply for givrn job or not. Record the time taken to make this decision.
+* Now, using savitar, again ask them to make the decision for the other job profile. Again, record the time.
+* Now compare both the times.
+
+* Repeat this experiment with more number of jobs and for more number of people.
+* Analyse and compare the timing data statistically to verify the hypothesis.
+
 
