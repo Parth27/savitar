@@ -41,7 +41,7 @@ Download the packed extension in .crx format <a id="raw-url" href="https://raw.g
 
 
 # Project Set up
-* Download and extract the repo.
+* Run "npm install savitar-extension" OR Download and extract the repo.
 * Go to chrome://extensions/.
 * Switch on developer mode, select Load Unpacked and select the downloaded repository folder
 * Go to any job description on LinkedIn and turn on the extension as shown in the demo.
