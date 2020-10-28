@@ -3,6 +3,7 @@ let params = {
   currentWindow: true,
 };
 
+//Preloaded data, with every badge checked initially
 let message = {
   experience: {
     checked: true,
@@ -18,6 +19,8 @@ let message = {
   },
 };
 
+
+// Executed when the extension is loaded
 document.body.onload = function () {
   chrome.storage.sync.get("data", function (items) {
     if (!chrome.runtime.error) {
@@ -50,10 +53,16 @@ function gotTabs(tabs) {
   chrome.tabs.sendMessage(tabs[0].id, message);
 }
 
+
+// Function to handle the event of toggling switches
 function toggle(event) {
+  // check if any particular switch is toggled and get the id
   const badge = event.target.id;
   message[badge]["checked"] = event.target.checked;
   chrome.tabs.query(params, gotTabs);
+  
+  // Update the message variable to set to turn off displaying\
+  // that particular badge
   chrome.storage.sync.set({ data: message }, function () {
     if (chrome.runtime.error) {
       console.log("Runtime error.");
