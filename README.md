@@ -19,20 +19,21 @@ We all know, how challenging it is to find the job that meets all your expectati
 
 ## Table of contents
 - [Project Video](#project-video-and-demo)
+- [What we completed in phase 2](what-we-completed-in-phase-2)
 
 # Project Video and Demo
 
 [![Savitar demo](https://img.youtube.com/vi/sKJj4aNkDVI/0.jpg)](https://www.youtube.com/watch?v=sKJj4aNkDVI)
 
 
-## What we completed in phase 2
+# What we completed in phase 2
 * Replaced dummy data of badges with actual realtime data using string parsing and obtaining data from the body of linkedln pages.
 * Expanded the functionality of project by adding fileds like "Years of experience", "Sponsorship", "Domain", etc.
 * Completed integrating the Chrome extension with LinkedIn.
 * Added Unit Tests for Javascript related part of the project.
 * Added browser testing using Selenium for verifying html part of code.
 
-## Project Set up
+# Project Set up
 * add project setup instructions here.
 
 # Phase 3
