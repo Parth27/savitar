@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/295556704.svg)](https://zenodo.org/badge/latestdoi/295556704)
+[![DOI](https://zenodo.org/badge/299409059.svg)](https://zenodo.org/badge/latestdoi/299409059)
 [![Build Status](https://travis-ci.com/Parth27/savitar.svg?branch=master)](https://travis-ci.com/Parth27/savitar)
 [![Coverage Status](https://coveralls.io/repos/github/Parth27/savitar/badge.svg?branch=master)](https://coveralls.io/github/Parth27/savitar?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e8b36018aedb7e1e7fb9/maintainability)](https://codeclimate.com/github/Parth27/savitar/maintainability)
