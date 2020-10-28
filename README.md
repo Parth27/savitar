@@ -30,6 +30,9 @@ We all know, how challenging it is to find the job that meets all your expectati
 * Added Unit Tests for Javascript related part of the project.
 * Added browser testing using Selenium for verifying html part of the code.
 
+# Download the chrome extension at <a id="raw-url" href="https://raw.githubusercontent.com/Parth27/savitar/master/Downloads/savitar.crx">Download Savitar</a>
+
+
 # Project Set up
 * Download and extract the repo.
 * Go to chrome://extensions/.
