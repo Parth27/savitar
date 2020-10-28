@@ -8,6 +8,18 @@ Created on Sun Oct 25 16:36:45 2020
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException as ElemNotFound
 
+'''
+################## How to Use ##############################
+
+1. Modify the add_extension method, with filepath where the
+   .crx file is present.
+2. Run the code and once the browser opens, turn on the
+   developer options to view the ID of the extension.
+3. Rerun the code, by entering the extension_id field.
+4. The code checks the popup.html page for any inconsistencies.
+
+############################################################
+''''
 
     
 class AutomatedTesting():
