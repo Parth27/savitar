@@ -20,14 +20,11 @@ We all know, how challenging it is to find the job that meets all your expectati
 
 ## Table of contents
 - [Project Video](#project-video-and-demo)
-- [Project Stages](#project-stages)
-- [License](#license)
 
 # Project Video and Demo
 
 [![Savitar demo](https://img.youtube.com/vi/sKJj4aNkDVI/0.jpg)](https://www.youtube.com/watch?v=sKJj4aNkDVI)
 
-# Project Stages
 
 ## What we completed in phase 2
 * Removed dummy data of badges to actual realtime data using string parsing the body of linkedln pages.
@@ -36,13 +33,13 @@ We all know, how challenging it is to find the job that meets all your expectati
 * Added Unit Tests for Javascript related part of the project.
 * Added browser testing using Selenium for verifying html part of code.
 
-## Part 2 Requirements 
+## Project Set up
+* add project setup instructions here.
 
-* Expanding the scope of LinkedIn badges to derive several other key insights required by a job seeking candidate. These can range from salary based filters to identifying the location specific jobs.
+# Phase 3
 
-## Part 3 Requirements
-* Incorporating notification based services for jobs searched by the candidate and setting triggers for job alerts. 
-* Fulfill all requirements related to deployment of the extension to Chrome store.
-* Expanding the scope of the project to other portals such as Indeed, Monster.com etc. for the best possible user experience and time saving. 
+## Hypothesis
+* With the help of this chrome extention, one can speed up the job filering process on linkdln by 70 percent!!!
 
+## Experimental setup for quantitative evaluation of our project
 
