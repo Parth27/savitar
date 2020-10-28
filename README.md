@@ -10,7 +10,7 @@
 <img src = "https://img.shields.io/github/languages/top/Parth27/savitar?color=green">
 <img src = "https://img.shields.io/github/repo-size/Parth27/savitar?color=orange">
 <img src = "https://img.shields.io/github/issues-closed/Parth27/savitar">
-
+<img src = "https://img.shields.io/github/issues-pr/Parth27/Savitar">
 
 # Savitar - A user-friendly jobs filter extension for LinkedIn [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Do%20you%20plan%20to%20improve%20your%20job%20searches%20on%20LinkedIn%3F%20Look%20no%20further.%20Savitar%20is%20the%20right%20extension%20for%20the%20job.%20Use%20it!%20Tweet%20it!%20Enjoy%20it!%20&hashtags=LinkedIn%20feature%20recommendations%20%20&url=https%3A%2F%2Fgithub.com%2Fpushkardravid%2Fsavitar%2F%20)
 
