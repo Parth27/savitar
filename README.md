@@ -6,13 +6,10 @@
 # Savitar - A user-friendly jobs filter extension for LinkedIn [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Do%20you%20plan%20to%20improve%20your%20job%20searches%20on%20LinkedIn%3F%20Look%20no%20further.%20Savitar%20is%20the%20right%20extension%20for%20the%20job.%20Use%20it!%20Tweet%20it!%20Enjoy%20it!%20&hashtags=LinkedIn%20feature%20recommendations%20%20&url=https%3A%2F%2Fgithub.com%2Fpushkardravid%2Fsavitar%2F%20)
 
 <p align="center">
-<img src = "https://img.shields.io/github/license/pushkardravid/savitar">
+<img src = "https://img.shields.io/github/license/Parth27/savitar">
 <img src = "https://img.shields.io/github/issues/Parth27/savitar">
-<img src = "https://img.shields.io/github/issues-pr/pushkardravid/savitar">
 <img src = "https://img.shields.io/aur/last-modified/today">
 <img src = "https://img.shields.io/github/last-commit/Parth27/savitar">
-<img src = "https://img.shields.io/youtube/views/aRedmJN3bUc?style=social">
-<img src = "https://img.shields.io/github/contributors/pushkardravid/savitar">
 </p>
 
 ---
