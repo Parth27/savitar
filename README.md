@@ -2,7 +2,6 @@
 [![Build Status](https://travis-ci.com/Parth27/savitar.svg?branch=master)](https://travis-ci.com/Parth27/savitar)
 [![Coverage Status](https://coveralls.io/repos/github/Parth27/savitar/badge.svg?branch=master)](https://coveralls.io/github/Parth27/savitar?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e8b36018aedb7e1e7fb9/maintainability)](https://codeclimate.com/github/Parth27/savitar/maintainability)
-
 <img src = "https://img.shields.io/github/license/Parth27/savitar">
 <img src = "https://img.shields.io/github/issues/Parth27/savitar">
 <img src = "https://img.shields.io/github/last-commit/Parth27/savitar">
