@@ -1,4 +1,5 @@
 const generateBadge = (color, label, value) => {
+  // Function to generate a badge
   let badgeDiv = document.createElement("div");
   badgeDiv.setAttribute("id", label);
   badgeDiv.style = `display: inline-block;
@@ -39,6 +40,7 @@ const generateBadge = (color, label, value) => {
 };
 
 function getElementByXpath(path, document) {
+  // Function to return HTML element from given Xpath
   return document.evaluate(
     path,
     document,
@@ -50,11 +52,12 @@ function getElementByXpath(path, document) {
 
 const displayBadge = (document) => {
   const text = document.getElementsByTagName("article")[0].textContent;
-
+  // Location when opening job in new tab
   let parentDiv = getElementByXpath(
     "/html/body/div[8]/div[3]/div/div[1]/div[1]/div/div[1]/div/section/div[2]/div[1]",
     document
   );
+  // Location when opening job in same tab
   if (parentDiv == null) {
     parentDiv = getElementByXpath(
       "/html/body/div[7]/div[3]/div/div[1]/div[1]/div/div[1]/div/section/div[2]/div[1]",
@@ -92,7 +95,7 @@ function handleClickAsync() {
     setCount((count) => count + 1);
   }, 1000);
 }
-
+// Chrome event listener
 chrome.runtime.onMessage.addListener(newMessage);
 
 function newMessage(message, sender, sendResponse) {
